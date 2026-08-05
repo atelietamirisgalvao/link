@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ateliê Tamiris Galvão | Cabeleireira e Maquiadora em Cachoeira Paulista</title>
+<meta name="description" content="Especialista em cortes, maquiagem profissional, hidratação e cronograma capilar em Cachoeira Paulista. Agende seu horário pelo WhatsApp.">
+<meta name="keywords" content="salão de beleza Cachoeira Paulista, cabeleireira Cachoeira Paulista, maquiagem profissional, corte feminino, hidratação capilar, cronograma capilar, Ateliê Tamiris Galvão, beleza em Cachoeira Paulista, autocuidado, maquiagem social">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://atelietamirisgalvao.github.io/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ateliê Tamiris Galvão | Cabeleireira e Maquiadora">
+<meta property="og:description" content="Cortes, maquiagem profissional, hidratação e cronograma capilar em Cachoeira Paulista - SP. Agende pelo WhatsApp.">
+<meta property="og:image" content="assets/tamiris-hero.webp">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Salvaguarda: garante responsividade mesmo se style.css não carregar -->
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;max-width:100vw;overflow-x:hidden;}
+  img{max-width:100%;height:auto;display:block;}
+</style>
+
+<!-- Estilos do Quiz -->
+<style>
+.dstq-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:99999;
+  background:rgba(35,24,12,.55);
+  backdrop-filter:blur(3px);
+  padding:20px;
+  overflow-y:auto;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.dstq-overlay *{box-sizing:border-box;}
+.dstq-overlay.dstq-on{display:flex;align-items:center;justify-content:center;}
+
+.dstq-card{
+  position:relative;
+  width:100%;
+  max-width:480px;
+  background:#fffaf4;
+  border-radius:22px;
+  padding:34px 28px 30px;
+  box-shadow:0 20px 60px rgba(0,0,0,.28);
+  text-align:left;
+  animation:dstq-in .3s ease;
+}
+@keyframes dstq-in{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+
+.dstq-close{
+  position:absolute;
+  top:14px;
+  right:14px;
+  width:34px;
+  height:34px;
+  border:none;
+  cursor:pointer;
+  background:#f0e4d4;
+  color:#7a5a34;
+  border-radius:50%;
+  font-size:18px;
+  line-height:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.dstq-close:hover{background:#e6d5bd;}
+
+.dstq-progress{
+  height:6px;
+  width:100%;
+  background:#efe2d0;
+  border-radius:10px;
+  margin-bottom:22px;
+  overflow:hidden;
+}
+.dstq-bar{
+  height:100%;
+  width:20%;
+  background:#daa775;
+  border-radius:10px;
+  transition:width .35s ease;
+}
+
+.dstq-step{display:none;}
+.dstq-step.dstq-active{display:block;}
+
+.dstq-eyebrow{
+  font-size:12.5px;
+  font-weight:700;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:#c08e54;
+  margin:0 0 6px;
+}
+.dstq-q{
+  font-size:20px;
+  font-weight:700;
+  color:#3a2a17;
+  line-height:1.35;
+  margin:0 0 18px;
+}
+.dstq-sub{
+  font-size:14.5px;
+  color:#7a6a56;
+  line-height:1.5;
+  margin:0 0 20px;
+}
+
+.dstq-opt{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  width:100%;
+  text-align:left;
+  border:1.5px solid #ecdcc6;
+  background:#fff;
+  color:#4a3a28;
+  font-size:15px;
+  font-weight:500;
+  padding:15px 16px;
+  border-radius:14px;
+  margin-bottom:11px;
+  cursor:pointer;
+  transition:border-color .18s ease, background .18s ease, transform .12s ease;
+}
+.dstq-opt:hover{border-color:#daa775;background:#fdf4e8;transform:translateX(2px);}
+.dstq-dot{
+  width:20px;
+  height:20px;
+  flex:0 0 auto;
+  border-radius:50%;
+  border:2px solid #d9c3a3;
+  transition:all .18s ease;
+}
+.dstq-opt:hover .dstq-dot{border-color:#daa775;background:#daa775;}
+
+.dstq-input{
+  width:100%;
+  border:1.5px solid #ecdcc6;
+  background:#fff;
+  border-radius:14px;
+  padding:15px 16px;
+  font-size:15px;
+  color:#3a2a17;
+  margin-bottom:16px;
+  outline:none;
+  transition:border-color .18s ease;
+}
+.dstq-input:focus{border-color:#daa775;}
+.dstq-input::placeholder{color:#b9a993;}
+
+.dstq-send{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:100%;
+  border:none;
+  cursor:pointer;
+  background:#daa775;
+  color:#3a2a17;
+  font-size:16.5px;
+  font-weight:700;
+  padding:16px;
+  border-radius:14px;
+  transition:filter .2s ease, transform .15s ease;
+}
+.dstq-send:hover{filter:brightness(1.05);transform:translateY(-1px);}
+.dstq-send svg{width:20px;height:20px;flex:0 0 auto;}
+
+.dstq-back{
+  display:inline-block;
+  margin-top:14px;
+  border:none;
+  background:none;
+  cursor:pointer;
+  color:#a08a6c;
+  font-size:13.5px;
+  padding:4px 2px;
+}
+.dstq-back:hover{color:#7a5a34;text-decoration:underline;}
+
+.dstq-final-title{
+  font-size:21px;
+  font-weight:700;
+  color:#3a2a17;
+  line-height:1.35;
+  margin:0 0 8px;
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="glow glow--top" aria-hidden="true"></div>
+  <div class="glow glow--bottom" aria-hidden="true"></div>
+
+  <main class="card-shell">
+
+    <!-- HERO -->
+    <header class="hero" data-reveal>
+      <div class="hero__frame">
+        <img class="hero__photo" src="assets/tamiris-hero.webp" alt="Tamiris Galvão, cabeleireira e maquiadora do Ateliê Tamiris Galvão" width="900" height="1068" loading="eager" style="width:100%;height:auto;max-width:100%;">
+        <div class="hero__ring" aria-hidden="true"></div>
+        <img class="hero__badge" src="assets/logo-trimmed.png" alt="" width="400" height="399" loading="eager" style="width:68px;height:auto;max-width:68px;">
+      </div>
+
+      <h1 class="hero__name">Ateliê Tamiris Galvão</h1>
+      <p class="hero__subtitle">Cabeleireira Especialista em Cortes &amp; Maquiadora</p>
+
+      <div class="divider" aria-hidden="true"><span></span><i></i><span></span></div>
+
+      <nav class="social-row" aria-label="Redes sociais e contato rápido">
+        <a class="social-btn" href="https://www.instagram.com/atelietamirisgalvao/" target="_blank" rel="noopener" aria-label="Instagram do Ateliê Tamiris Galvão">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        </a>
+        <a class="social-btn" href="https://wa.me/5512982173617?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="WhatsApp do Ateliê Tamiris Galvão">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3a8.5 8.5 0 0 0-7.35 12.75L3.5 20.5l4.9-1.1A8.5 8.5 0 1 0 12 3Z"/><path d="M8.3 8.6c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.8.1.1.1.3 0 .4-.4.6-.7.7-.5 1 .5.8 1.1 1.4 1.9 1.8.3.2.4.1.6-.1.2-.3.7-.8.9-1 .2-.2.4-.2.6-.1.9.4 1.7.8 1.9.9.2.1.4.2.4.4 0 .3-.1 1-.5 1.4-.4.4-1.2.8-2 .7-1.2-.1-2.7-.8-4-2-1.1-1-1.8-2.1-2.1-2.7-.2-.5-.1-.9.1-1.3.1-.2.4-.6.5-.8Z" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="social-btn" href="https://maps.app.goo.gl/BfdGmTvzHm7rAX5z7" target="_blank" rel="noopener" aria-label="Localização do Ateliê Tamiris Galvão no mapa">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+        </a>
+      </nav>
+
+      <a class="cta" href="#" id="dstqOpen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.8H20l-4.9 3.6 1.9 5.8L12 14.6 7 18.2l1.9-5.8L4 8.8h6.1z"/></svg>
+        <span>Descubra seu cuidado ideal em 1 minuto</span>
+      </a>
+    </header>
+
+    <!-- CARDS -->
+    <section class="links" aria-label="Serviços e informações">
+
+      <a class="link-card" data-reveal href="https://wa.me/5512982173617?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">
+        <span class="link-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17"/><path d="M8 3v3.5M16 3v3.5"/><circle cx="12" cy="14.5" r="1.4" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="link-card__text">
+          <span class="link-card__title">Agendamento</span>
+          <span class="link-card__desc">Se você busca um salão de beleza que valoriza sua autoestima e realça sua beleza natural, o Ateliê Tamiris Galvão é o lugar certo!</span>
+        </span>
+        <svg class="link-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"/></svg>
+      </a>
+
+      <a class="link-card" data-reveal href="https://wa.me/5512982173617?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20todos%20os%20tratamentos%20e%20servi%C3%A7os%20oferecidos%20pelo%20Ateli%C3%AA%20Tamiris%20Galv%C3%A3o." target="_blank" rel="noopener">
+        <span class="link-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.5 4.5h15v3h-15z"/><path d="M6.5 7.5v12M9.5 7.5v12M12.5 7.5v12M15.5 7.5v12M18.5 7.5v9"/></svg>
+        </span>
+        <span class="link-card__text">
+          <span class="link-card__title">Tratamentos</span>
+          <span class="link-card__desc">Maquiagem profissional, cortes, hidratação e cronograma capilar. Tudo realizado com qualidade impecável para valorizar sua beleza e elevar sua autoestima.</span>
+        </span>
+        <svg class="link-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"/></svg>
+      </a>
+
+      <a class="link-card" data-reveal href="https://www.google.com/maps/contrib/112551207374852573581/photos/" target="_blank" rel="noopener">
+        <span class="link-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.7"/><path d="M4 17l4.5-4.5a2 2 0 0 1 2.8 0L15 16l1.3-1.3a2 2 0 0 1 2.8 0L20.5 16"/></svg>
+        </span>
+        <span class="link-card__text">
+          <span class="link-card__title">Resultados</span>
+          <span class="link-card__desc">Veja alguns dos resultados e transformações realizadas no Ateliê Tamiris Galvão.</span>
+        </span>
+        <svg class="link-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"/></svg>
+      </a>
+
+      <a class="link-card" data-reveal href="https://maps.app.goo.gl/BfdGmTvzHm7rAX5z7" target="_blank" rel="noopener">
+        <span class="link-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+        </span>
+        <span class="link-card__text">
+          <span class="link-card__title">Localização</span>
+          <span class="link-card__desc">Atendimento em um espaço limpo, confortável e acolhedor, localizado em Cachoeira Paulista - SP.</span>
+        </span>
+        <svg class="link-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"/></svg>
+      </a>
+
+      <a class="link-card link-card--vip" data-reveal href="https://chat.whatsapp.com/ITCzv4coqeFEFErfMc4f9O?s=cl&p=a&ilr=4" target="_blank" rel="noopener">
+        <span class="link-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8l3.5 2.5L12 5l4.5 5.5L20 8l-1.6 10H5.6L4 8Z"/></svg>
+        </span>
+        <span class="link-card__text">
+          <span class="link-card__title">Grupo VIP</span>
+          <span class="link-card__desc">Entre no Grupo VIP do WhatsApp e receba promoções, novidades e condições especiais em primeira mão.</span>
+        </span>
+        <svg class="link-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"/></svg>
+      </a>
+
+    </section>
+
+    <!-- AMBIENTE -->
+    <section class="ambiente" data-reveal aria-label="Ambiente do ateliê">
+      <img src="assets/ambiente.webp" alt="Espaço de atendimento do Ateliê Tamiris Galvão em Cachoeira Paulista" width="531" height="900" loading="lazy" style="width:100%;height:260px;max-width:100%;object-fit:cover;">
+      <p>Um espaço pensado para o seu conforto e bem-estar</p>
+    </section>
+
+    <!-- CONTATO -->
+    <footer class="contact" data-reveal>
+      <div class="divider" aria-hidden="true"><span></span><i></i><span></span></div>
+      <address>
+        Av. Sebastião José de Paula, 80<br>
+        Cachoeira Paulista - SP · CEP 12631-140
+      </address>
+      <p class="contact__whats">
+        <a href="https://wa.me/5512982173617" target="_blank" rel="noopener">(12) 98217-3617</a>
+      </p>
+      <p class="copyright">© 2026 Ateliê Tamiris Galvão. Todos os direitos reservados.</p>
+    </footer>
+
+  </main>
+</div>
+
+<!-- Quiz de captação -->
+<div class="dstq-overlay" id="dstqOverlay">
+  <div class="dstq-card">
+    <button type="button" class="dstq-close" id="dstqClose" aria-label="Fechar">&times;</button>
+
+    <div class="dstq-progress"><div class="dstq-bar" id="dstqBar"></div></div>
+
+    <div class="dstq-step dstq-active" data-step="1">
+      <p class="dstq-eyebrow">Passo 1 de 5</p>
+      <h3 class="dstq-q">O que mais te incomoda no seu visual hoje?</h3>
+      <button type="button" class="dstq-opt" data-q="incomodo" data-v="Cabelo ressecado, sem vida ou difícil de arrumar"><span class="dstq-dot"></span>Cabelo ressecado, sem vida ou difícil de arrumar</button>
+      <button type="button" class="dstq-opt" data-q="incomodo" data-v="Corte que não valoriza meu rosto"><span class="dstq-dot"></span>Corte que não valoriza meu rosto</button>
+      <button type="button" class="dstq-opt" data-q="incomodo" data-v="Não sei fazer uma maquiagem que dure o dia todo"><span class="dstq-dot"></span>Não sei fazer uma maquiagem que dure o dia todo</button>
+      <button type="button" class="dstq-opt" data-q="incomodo" data-v="Sinto que perdi o cuidado comigo mesma"><span class="dstq-dot"></span>Sinto que perdi o cuidado comigo mesma</button>
+    </div>
+
+    <div class="dstq-step" data-step="2">
+      <p class="dstq-eyebrow">Passo 2 de 5</p>
+      <h3 class="dstq-q">Isso te afeta em quais momentos?</h3>
+      <button type="button" class="dstq-opt" data-q="momento" data-v="Antes de sair de casa, todo dia"><span class="dstq-dot"></span>Antes de sair de casa, todo dia</button>
+      <button type="button" class="dstq-opt" data-q="momento" data-v="Em fotos e eventos importantes"><span class="dstq-dot"></span>Em fotos e eventos importantes</button>
+      <button type="button" class="dstq-opt" data-q="momento" data-v="Quando preciso me sentir confiante no trabalho"><span class="dstq-dot"></span>Quando preciso me sentir confiante no trabalho</button>
+      <button type="button" class="dstq-opt" data-q="momento" data-v="Em datas especiais (festas, casamentos, formaturas)"><span class="dstq-dot"></span>Em datas especiais (festas, casamentos, formaturas)</button>
+      <button type="button" class="dstq-back" data-back>← Voltar</button>
+    </div>
+
+    <div class="dstq-step" data-step="3">
+      <p class="dstq-eyebrow">Passo 3 de 5</p>
+      <h3 class="dstq-q">O que você quer sentir depois de cuidar disso?</h3>
+      <button type="button" class="dstq-opt" data-q="objetivo" data-v="Cabelo saudável, brilhoso e fácil de cuidar"><span class="dstq-dot"></span>Cabelo saudável, brilhoso e fácil de cuidar</button>
+      <button type="button" class="dstq-opt" data-q="objetivo" data-v="Um corte que combina comigo"><span class="dstq-dot"></span>Um corte que combina comigo</button>
+      <button type="button" class="dstq-opt" data-q="objetivo" data-v="Maquiagem que realça sem parecer pesada"><span class="dstq-dot"></span>Maquiagem que realça sem parecer pesada</button>
+      <button type="button" class="dstq-opt" data-q="objetivo" data-v="Mais confiança no espelho, no dia a dia"><span class="dstq-dot"></span>Mais confiança no espelho, no dia a dia</button>
+      <button type="button" class="dstq-back" data-back>← Voltar</button>
+    </div>
+
+    <div class="dstq-step" data-step="4">
+      <p class="dstq-eyebrow">Passo 4 de 5</p>
+      <h3 class="dstq-q">Para quando você pensa em se cuidar?</h3>
+      <button type="button" class="dstq-opt" data-q="prazo" data-v="O quanto antes"><span class="dstq-dot"></span>O quanto antes</button>
+      <button type="button" class="dstq-opt" data-q="prazo" data-v="Nas próximas semanas"><span class="dstq-dot"></span>Nas próximas semanas</button>
+      <button type="button" class="dstq-opt" data-q="prazo" data-v="Só pesquisando por enquanto, ainda sem data"><span class="dstq-dot"></span>Só pesquisando por enquanto, ainda sem data</button>
+      <button type="button" class="dstq-back" data-back>← Voltar</button>
+    </div>
+
+    <div class="dstq-step" data-step="5">
+      <p class="dstq-eyebrow">Quase lá</p>
+      <h3 class="dstq-final-title">Falta só o seu nome para receber sua indicação 💛</h3>
+      <p class="dstq-sub">A Tamiris vai te chamar no WhatsApp com a sugestão certa pra você.</p>
+      <input type="text" class="dstq-input" id="dstqName" placeholder="Digite seu nome">
+      <button type="button" class="dstq-send" id="dstqSend">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.33 4.95L2 22l5.3-1.39c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7C17.18 3.03 14.69 2 12.04 2zm0 18.02h-.01c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 012.41 5.82c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+        Receber orientação no WhatsApp
+      </button>
+      <button type="button" class="dstq-back" data-back>← Voltar</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var DSTQ_CONFIG = {
+    whatsapp: "5512982173617",
+    ateliê:   "Ateliê Tamiris Galvão"
+  };
+
+  var overlay = document.getElementById('dstqOverlay');
+  var bar     = document.getElementById('dstqBar');
+  var steps   = overlay.querySelectorAll('.dstq-step');
+  var total   = steps.length;
+  var current = 1;
+  var answers = {};
+
+  function show(n){
+    current = n;
+    steps.forEach(function(s){
+      s.classList.toggle('dstq-active', Number(s.getAttribute('data-step')) === n);
+    });
+    bar.style.width = ((n/total)*100) + '%';
+  }
+
+  function open(){ overlay.classList.add('dstq-on'); document.body.style.overflow='hidden'; show(1); }
+  function close(){ overlay.classList.remove('dstq-on'); document.body.style.overflow=''; }
+
+  document.getElementById('dstqOpen').addEventListener('click', function(e){ e.preventDefault(); open(); });
+  document.getElementById('dstqClose').addEventListener('click', close);
+  overlay.addEventListener('click', function(e){ if(e.target === overlay) close(); });
+
+  overlay.querySelectorAll('.dstq-opt').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      answers[btn.getAttribute('data-q')] = btn.getAttribute('data-v');
+      if(current < total) show(current + 1);
+    });
+  });
+
+  overlay.querySelectorAll('[data-back]').forEach(function(btn){
+    btn.addEventListener('click', function(){ if(current > 1) show(current - 1); });
+  });
+
+  document.getElementById('dstqSend').addEventListener('click', function(){
+    var nome = (document.getElementById('dstqName').value || '').trim();
+    if(!nome){ document.getElementById('dstqName').focus(); return; }
+
+    var msg = "Olá! Vim pelo site e respondi o quiz de avaliação. 💛\n\n"
+      + "Meu nome é " + nome + ".\n\n"
+      + "• O que mais me incomoda: " + (answers.incomodo || "-") + "\n"
+      + "• Quando isso mais me afeta: " + (answers.momento || "-") + "\n"
+      + "• O que eu quero alcançar: " + (answers.objetivo || "-") + "\n"
+      + "• Para quando quero resolver: " + (answers.prazo || "-") + "\n\n"
+      + "Quero uma indicação personalizada do " + DSTQ_CONFIG.ateliê + ".";
+
+    var url = "https://wa.me/" + DSTQ_CONFIG.whatsapp + "?text=" + encodeURIComponent(msg);
+    window.open(url, "_blank");
+    close();
+  });
+
+  document.getElementById('dstqName').addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); document.getElementById('dstqSend').click(); }
+  });
+})();
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
